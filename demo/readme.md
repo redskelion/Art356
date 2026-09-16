@@ -9,4 +9,4 @@
 
 ###Instructions
 
-This project from Art 356 features cool stuff (https://redskelion.github.io/Art356/demo/)
+This project from Art 356 features cool stuff [Project 1](https://redskelion.github.io/Art356/demo/)
