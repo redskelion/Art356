@@ -2,10 +2,7 @@
 
 ## Project Description
 
-This project is a Pokemon TCG randomizer made with p5.js. The user first
-clicks the coin to randomly decide who goes first. After that, the user
-can draw cards. The program randomly chooses an Active Pokemon for the
-user and opponent and gives the user four random cards.
+My project is a Pokemon TCG randomizer. I chose this since there are multiple randomized functions such as flipping the coin to see who goes first and who goes second, as well as giving you and the bot a random pokemon, and you a random  hand.
 
 ## How to Use
 
@@ -16,18 +13,15 @@ user and opponent and gives the user four random cards.
 
 ## Wireframe
 
-This wireframe shows my original plan for the layout of the coin,
-buttons, Active Pokemon, benches, and random hand.
+The wireframe below is my original template/sketch on how I thought my project was going to work. I did decide to change the design of most of it throughout the design process as I felt it looked better for my project.
 
-![Wireframe](Wireframe.png)
+
 
 ## Mood Board
 
-My mood board includes two Pokemon deck lists I have used, a competitive
-Pokemon event, and a Pokemon TCG Live battle. These images inspired the
-theme and layout of my randomizer.
+In my mood board I have my inspirations for my projects. I posted photos of 2 Pokemon decks, one is similar to the one that I'm currently using and the other one is the most competitive deck right now. I also posted a photo of an in person tournament as well as the mobile game that allows you to play the game digitally. 
 
-![Mood Board](Moodboard.png)
+
 
 ## Live Project
 
