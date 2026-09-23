@@ -14,13 +14,13 @@ My project is a Pokemon TCG randomizer. I chose this since there are multiple ra
 ## Wireframe
 
 The wireframe below is my original template/sketch on how I thought my project was going to work. I did decide to change the design of most of it throughout the design process as I felt it looked better for my project.
-
+![Wireframe](Wireframe.png)
 
 
 ## Mood Board
 
 In my mood board I have my inspirations for my projects. I posted photos of 2 Pokemon decks, one is similar to the one that I'm currently using and the other one is the most competitive deck right now. I also posted a photo of an in person tournament as well as the mobile game that allows you to play the game digitally. 
-
+![Mood Board](Moodboard.png)
 
 
 ## Live Project
