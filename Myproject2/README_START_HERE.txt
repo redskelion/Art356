@@ -1,0 +1,1 @@
+Open this extracted outer folder in VS Code and right-click index.html -> Open with Live Server. You can also open BestSellingGames/index.html directly. Ranking search preserves original global ranks across all CSV rows. The TV console/region filters still control the charts; the ranking table shows permanent global sales ranks.
