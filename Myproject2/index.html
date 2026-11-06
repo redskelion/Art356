@@ -1,12 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Best Selling Games</title>
-  <meta http-equiv="refresh" content="0;url=Myproject2/index.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Selling Games — Video Game Sales Explorer</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
 </head>
 <body>
-  <p>Opening Best Selling Games...</p>
-  <a href="Myproject2/index.html">Click here to enter</a>
+<main class="room">
+ <header class="sign"><span class="sign-icon">✦</span><h1>BEST SELLING GAMES</h1><span class="sign-icon">✦</span><p>Explore video game history, one game at a time</p></header>
+ <div class="room-layout">
+  <aside class="decor left collectible-wall" aria-label="Nintendo collectibles"><div class="collection-title">NINTENDO CORNER</div><div class="collectible-shelf"><div class="figure"><span class="figure-art">🍄</span><small>Power-up</small></div><div class="figure"><span class="figure-art">⭐</span><small>Star</small></div></div><div class="collectible-shelf"><div class="figure"><span class="question-block" aria-label="Yellow question-mark block">?</span><small>Mystery block</small></div><div class="figure"><span class="poke-ball" aria-label="Red and white Poké Ball"><span class="poke-button"></span></span><small>Poké Ball</small></div></div><div class="collectible-shelf"><div class="figure"><span class="figure-art">🦖</span><small>Dino figure</small></div><div class="figure"><span class="figure-art">🎮</span><small>Controller</small></div></div><div class="mini-led">★ PLAYER 1 ★</div></aside>
+  <section class="center">
+   <div class="shelf-header"><span>🏆 TOP 7 BEST-SELLING GAMES OF ALL TIME</span><span id="shelf-count">Loading...</span></div>
+   <div class="shelf" id="shelf" aria-label="Top selling game cases"></div><div class="wood-edge"></div>
+   <div class="tv"><div class="tv-top"><span>● <strong>PLAYER ONE</strong> / DATA EXPLORER</span><div class="tv-actions"><span id="theme-label">ALL CONSOLES THEME</span><button id="sound-toggle" type="button" aria-pressed="true">🔊 SOUND ON</button><span class="power">● LIVE DATA</span></div></div><nav class="tv-nav" aria-label="TV screens">
+<button type="button" data-tv-tab="Overview" class="active">Overview</button>
+<button type="button" data-tv-tab="Top Games">Top Games</button>
+<button type="button" data-tv-tab="Releases">Releases</button>
+<button type="button" data-tv-tab="All Games">All Games</button>
+<button type="button" data-tv-tab="Game Details">Game Details</button>
+</nav>
+<div class="tv-filters"><label>Console <select id="console-select"></select></label><label>Region <select id="region-select"></select></label></div>
+<div id="canvas-container"></div>
+<section id="top-ranking-panel" class="ranking-panel" hidden>
+ <div class="ranking-head"><div><h2>Browse every game in the ranking</h2><p>Search all records while preserving their original global ranking. Select a row for full game details.</p></div><input type="search" id="ranking-search" placeholder="Search any game..." aria-label="Search ranked games"></div>
+ <p id="ranking-count"></p>
+ <div class="ranking-scroll"><table><thead><tr><th>Global Rank</th><th>Game</th><th>Console</th><th>Year</th><th>Genre</th><th>Global Sales (M)</th></tr></thead><tbody id="ranking-rows"></tbody></table></div>
+ <div class="pager"><button type="button" id="ranking-prev">← Previous</button><span id="ranking-page"></span><button type="button" id="ranking-next">Next →</button></div>
+</section>
+<section id="all-games-panel" class="data-panel" hidden>
+ <h2>Complete Game Database</h2><p id="record-count"></p>
+ <div class="database-controls"><input id="game-search" type="search" placeholder="Search game, publisher, genre..." aria-label="Search all games"><label>Sort <select id="game-sort"><option value="sales">Highest sales</option><option value="name">Game name</option><option value="year">Newest first</option></select></label></div>
+ <div class="table-scroll"><table><thead><tr><th>Game</th><th>Console</th><th>Year</th><th>Genre</th><th>Publisher</th><th>Global M</th><th>NA M</th><th>EU M</th><th>JP M</th><th>Other M</th><th>Critic</th><th>User</th></tr></thead><tbody id="game-rows"></tbody></table></div>
+ <div class="pager"><button id="prev-records" type="button">← Previous</button><span id="page-status"></span><button id="next-records" type="button">Next →</button></div>
+</section>
+<section id="details-panel" class="data-panel" hidden><button id="back-button" type="button">← Back to previous screen</button><div id="details-content"></div></section><div class="tv-bottom"><span>◉ SHELF OS</span><span>VIDEO GAME SALES · 1980–2016</span><span class="led">●</span></div></div><div class="tv-stand"></div>
+   <div class="controller">✚ <span>● &nbsp; ● &nbsp; ● &nbsp; ●</span> ◉</div>
+  </section>
+  <aside class="decor right collectible-wall" aria-label="Gaming collectibles"><div class="collection-title">GAMING LEGENDS</div><div class="collectible-shelf"><div class="figure"><span class="figure-art">🟩</span><small>Pixel block</small></div><div class="figure"><span class="figure-art">🪖</span><small>Sci-fi helmet</small></div></div><div class="collectible-shelf"><div class="figure"><span class="figure-art">👾</span><small>Arcade alien</small></div><div class="figure"><span class="figure-art">🕹️</span><small>Arcade stick</small></div></div><div class="collectible-shelf"><div class="figure"><span class="figure-art">🏎️</span><small>Racing car</small></div><div class="figure"><span class="figure-art">🎧</span><small>Headset</small></div></div><div class="mini-led">★ PLAYER 2 ★</div></aside>
+ </div>
+ <footer><p>The top seven best-selling game cases stay fixed while TV console filters change the data and room lighting. Click a case for game details, themed lighting, and optional game audio. The shelf shows genuine cover artwork when available; titles without a working cover are omitted. Clicking a game plays a short original synthesized effect.</p><p>Data: <a href="https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings" target="_blank" rel="noopener noreferrer">Video Game Sales with Ratings (Kaggle)</a> · Visualization built with p5.js, JavaScript, HTML & CSS.</p></footer>
+</main>
+
+<script src="sketch.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+Top Games now has a complete searchable, paginated ranking below the animated top-ten bar chart. All Games still contains every CSV row with full columns. The Poké Ball and mystery block are now drawn with CSS instead of emoji. Fixed p5 shorten(string) crashes and removed the missing room-reference.png request. Open index.html with Live Server.

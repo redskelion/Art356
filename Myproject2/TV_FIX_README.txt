@@ -1,0 +1,1 @@
+TV screen repair: Removed an erroneous -205 pixel vertical translation that shifted all p5 chart content off-screen. Existing HTML navigation, All Games table, Game Details, filters, and back button retained. Run index.html using Live Server. Cover assets are NOT included in this repair.
